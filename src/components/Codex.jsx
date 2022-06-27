@@ -1,29 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
+import Monsters from './codexTabs/Monsters'
+import Weapons from './codexTabs/Weapons'
 
 const Codex = () => {
-    const monsterTab = () => {
 
-    }
+  const [activeTab, setActiveTab] = useState('monsters')
 
-    const weaponTab = () => {
+  const handleTabMonsters = () => {
+    setActiveTab('monsters')
+  }
 
-    }
+  const handleTabWeapons = () => {
+    setActiveTab('weapons')
+  }
 
-    const next = () => {
-
-    }
-
-    const previous = () => {
-
-    }
-
-  return (
-    <div>
-        <button>Monsters</button>
-        <button>Weapons</button>
-        
-    </div>
-  )
+    return (
+      <div className='codexTabs'>
+          <ul className='tabNav'>
+              <li className={activeTab === 'monsters' ? 'active' : ''} onClick={handleTabMonsters}>Monsters</li>
+              <li className={activeTab === 'weapons' ? 'active' : ''} onClick={handleTabWeapons}>Weapons</li>
+          </ul>
+          <div className='outlet'>
+            {activeTab === 'monsters' ? <Monsters /> : <Weapons />}
+          </div>
+      </div>
+    )
 }
 
 export default Codex
