@@ -11,7 +11,7 @@
   width: 80%;
   height: auto;
   min-height: 400px;
-  background: #053742;
+  background: #4d4d4d;
   margin: 3.5rem auto 1.5rem;
   padding: 2rem 1rem;
   color: #E8F0F2;
@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #39A2DB;
+  border: 1px solid #bbbbbb;
   border-radius: 2rem;
   padding-left: 0px;
   @media (max-width: 768px) {
@@ -57,7 +57,7 @@ ul.tabNav li:hover {
 }
 
 ul.tabNav li.active {
-  background: #39A2DB;
+  background: #bbbbbb;
 }
 
 .monsters p,

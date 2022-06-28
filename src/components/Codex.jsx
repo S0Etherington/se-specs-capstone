@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Monsters from './codexTabs/Monsters'
 import Weapons from './codexTabs/Weapons'
+import CodexFooter from './CodexFooter'
 
 const Codex = () => {
 
@@ -16,13 +17,15 @@ const Codex = () => {
 
     return (
       <div className='codexTabs'>
+        <div>
           <ul className='tabNav'>
               <li className={activeTab === 'monsters' ? 'active' : ''} onClick={handleTabMonsters}>Monsters</li>
               <li className={activeTab === 'weapons' ? 'active' : ''} onClick={handleTabWeapons}>Weapons</li>
           </ul>
           <div className='outlet'>
-            {activeTab === 'monsters' ? <Monsters /> : <Weapons />}
+            {activeTab === 'monsters' ? <Monsters/> : <Weapons />}
           </div>
+        </div>
       </div>
     )
 }
