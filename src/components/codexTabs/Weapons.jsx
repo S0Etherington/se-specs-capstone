@@ -33,6 +33,12 @@ const Weapons = () => {
           <p>Damage: {codexData[index].damage}</p>
         }
       </div>
+      <div>
+        {codexData.length === 0 ? 
+          <p className='loading'> loading </p> :
+          <p>Damage Type: {codexData[index].damage_type}</p>
+        }
+      </div>
 
       <footer><CodexFooter index={index} setIndex={setIndex} codexData={codexData} setCodexData={setCodexData}/></footer>
 

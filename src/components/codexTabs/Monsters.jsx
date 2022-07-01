@@ -33,9 +33,15 @@ const Monsters = () => {
           <p>Hit Points: {codexData[index].hit_points}</p>
         }
       </div>
+      <div>
+        {codexData.length === 0 ?
+          <p className='loading'> loading </p> :
+          <p>Weakness: {codexData[index].damage_weakness}</p>
+        }
+      </div>
 
       <footer><CodexFooter index={index} setIndex={setIndex} codexData={codexData} setCodexData={setCodexData}/></footer>
-      
+
     </div>
   )
 }

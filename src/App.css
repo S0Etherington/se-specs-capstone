@@ -5,12 +5,19 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../images/IMG-0118.PNG);
+  background-size:cover;
  }
 
  .codexTabs {
   width: 80%;
   height: auto;
   min-height: 400px;
+  min-width: 500px;
   background: #4d4d4d;
   margin: 3.5rem auto 1.5rem;
   padding: 2rem 1rem;
@@ -19,6 +26,7 @@
   @media (max-width: 769px) {
    padding: 2rem 0;
   }
+  
  }
 
  ul.tabNav {
@@ -64,4 +72,28 @@ ul.tabNav li.active {
 .weapons p {
   font-size: 2rem;
   text-align: center;
+}
+
+.home {
+  height: 30vw;
+  width: 50vw;
+  background-color: rgb(41, 41, 41);
+  margin-top: 150px;
+  border-radius: 15px;
+  opacity: 85%;
+  color: #E8F0F2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav {
+  background-color: transparent;
+  height: 3VW;
+  width: 75VW;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 20px;
 }
