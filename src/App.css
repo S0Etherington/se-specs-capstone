@@ -97,3 +97,7 @@ ul.tabNav li.active {
   align-content: center;
   margin-top: 20px;
 }
+
+.storyPage {
+  background-color: yellow;
+}

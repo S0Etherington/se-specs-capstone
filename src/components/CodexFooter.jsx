@@ -6,7 +6,7 @@ const CodexFooter = (props) => {
 
   const previous = () => {
     if(index === 0){
-      setIndex(codexData.length)
+      setIndex(codexData.length - 1)
     }
     else {
       setIndex(index - 1)
@@ -14,7 +14,7 @@ const CodexFooter = (props) => {
   }
 
   const next = () => {
-    if(index === codexData.length){
+    if(index === codexData.length - 1){
       setIndex(0)
     }
     else {

@@ -13,15 +13,10 @@ const {CONNECTION_STRING} = process.env
 app.use(express.json())
 app.use(cors())
 
-// app.post('/seed', seed)
-
 app.get('/damages', getDamages)
-// app.get('/damageSingle', getSingleDamage)
 
 app.get('/weapons', getWeapons)
-// app.get('/weaponSingle', getSingleWeapon)
 
 app.get('/monsters', getMonsters)
-// app.get('/monsterSingle', getSingleMonster)
 
 app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`))
