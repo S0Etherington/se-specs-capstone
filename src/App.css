@@ -20,7 +20,7 @@
   min-width: 500px;
   background: #4d4d4d;
   margin: 3.5rem auto 1.5rem;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem .5rem 1rem;
   color: #E8F0F2;
   border-radius: 2rem;
   @media (max-width: 769px) {
@@ -61,7 +61,7 @@ ul.tabNav li:nth-child(2) {
 }
 
 ul.tabNav li:hover {
-  background: rgba(50, 224, 196, 0.15);
+  background: rgba(24, 24, 24, 0.15);
 }
 
 ul.tabNav li.active {
@@ -74,7 +74,7 @@ ul.tabNav li.active {
   text-align: center;
 }
 
-.home {
+.storyBox {
   height: 30vw;
   width: 50vw;
   background-color: rgb(41, 41, 41);
@@ -83,12 +83,14 @@ ul.tabNav li.active {
   opacity: 85%;
   color: #E8F0F2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 
 .nav {
   background-color: transparent;
+  /* background-color: purple; */
   height: 3VW;
   width: 75VW;
   display: flex;
@@ -98,6 +100,92 @@ ul.tabNav li.active {
   margin-top: 20px;
 }
 
-.storyPage {
-  background-color: yellow;
+.button {
+  background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  opacity: 100%;
+  margin-top: 10px;
+}
+
+.button:hover {
+  color:#868686
+}
+
+#homeTextBox {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.homeText {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#homeButtonsBox {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+#storyTextBox {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+#storyButtonHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.storyButton {
+  text-align: center;
+}
+
+.navButton {
+  border-radius: 5px;
+  border-color: transparent;
+  background-color: rgb(41, 41, 41);
+  opacity: 85%;
+  color: white;
+  height: 2vw;
+  margin-left: 5px;
+  box-shadow: 0px 4px 4px rgb(224, 224, 224);
+}
+
+.navButton:hover {
+  background-color: rgb(26, 26, 26);
+  color: rgb(224, 224, 224);
+}
+
+#codexNavButtons {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.codexButton {
+  margin: 10px;
+  padding: 0px 10px 0px 10px;
 }

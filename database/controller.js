@@ -16,7 +16,9 @@ module.exports = {
     getWeapons: (req, res) => {
         sequelize.query(`
             SELECT *
-            FROM weapons
+            FROM weapons w
+            JOIN damage_types d
+            ON w.damage_type = d.damage_id
         `)
         .then(dbRes => {
             res.status(200).send(dbRes[0])
@@ -39,7 +41,9 @@ module.exports = {
     getMonsters: (req, res) => {
         sequelize.query(`
             SELECT *
-            FROM monsters
+            FROM monsters m
+            JOIN damage_types d
+            ON m.damage_weakness = d.damage_id
         `)
         .then(dbRes => {
             res.status(200).send(dbRes[0])

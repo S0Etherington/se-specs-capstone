@@ -10,10 +10,10 @@ const Navigation = () => {
     <div className='nav'>
       <div>
         <Link to='/'>
-          <button>Return Home</button>
+          <button className='navButton'>Return Home</button>
         </Link>
       </div>
-        <Popup trigger={<button clasName='button'> Codex </button>} modal>
+        <Popup trigger={<button className='navButton'> Codex </button>} modal>
           <span> {<Codex/>} </span>
         </Popup>
     </div>

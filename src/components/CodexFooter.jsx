@@ -23,9 +23,9 @@ const CodexFooter = (props) => {
   }
 
   return (
-    <div>
-        <button onClick={() => previous()}>Previous</button>
-        <button onClick={() => next()}>Next</button>
+    <div id='codexNavButtons'>
+        <button className='button navButton codexButton' onClick={() => previous()}>Previous</button>
+        <button className='button navButton codexButton' onClick={() => next()}>Next</button>
     </div>
   )
 }

@@ -5,17 +5,17 @@ const Home = () => {
 
 
   return (
-    <div className='home'>
-        <div>
-          <h1>It is a beautiful day, and you decide to make some soup.</h1>
-          <h3>Your cupboards are empty, so you grab your trust notebook and set off to find ingredients.</h3>
+    <div className='storyBox'>
+        <div id='homeTextBox'>
+          <h1 className='homeText storyText'>It is a beautiful day, and you are preparing for a party.</h1>
+          <h3 className='homeText'>Your cupboards are empty, so you grab your bag and set of in search of ingredients.</h3>
         </div>
-        <div>
+        <div id='homeButtonsBox'>
           <Link to='/StoryPage'>
-            <button>Click here to start your adventure</button>
+            <button className='button homeButton' >Click here to start your adventure</button>
           </Link>
           <Link to='/Credits'>
-            <button>Credits</button>
+            <button className='button homeButton' >Credits</button>
           </Link>
         </div>
 

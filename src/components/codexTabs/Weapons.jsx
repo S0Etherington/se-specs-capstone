@@ -36,7 +36,7 @@ const Weapons = () => {
       <div>
         {codexData.length === 0 ? 
           <p className='loading'> loading </p> :
-          <p>Damage Type: {codexData[index].damage_type}</p>
+          <p>Damage Type: {codexData[index].damage_name}</p>
         }
       </div>
 

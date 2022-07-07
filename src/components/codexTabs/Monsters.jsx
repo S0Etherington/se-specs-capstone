@@ -36,7 +36,7 @@ const Monsters = () => {
       <div>
         {codexData.length === 0 ?
           <p className='loading'> loading </p> :
-          <p>Weakness: {codexData[index].damage_weakness}</p>
+          <p>Weakness: {codexData[index].damage_name}</p>
         }
       </div>
 
