@@ -202,7 +202,62 @@ const story = {
         text: 'You place the rock back where it was and give it a gentle pat',
         subText: 'You walk around the back of your house',
         options: {
-            
+
+        }
+    },
+
+    impFight: {
+        background: null,
+        text: 'You try to fight the imp',
+        subText: 'Which weapon will you use?',
+        options: {
+            impbow: 'Flaming bow and arrow',
+            impAxe: 'Glowing battle axe',
+            impDart: 'Poisonous blow darts'
+        }
+    },
+
+    impTalk: {
+        background: null,
+        text: 'YOU DIED',
+        subText: 'The imp does not speak English',
+        options: {
+            null: null,
+            null: null,
+            null: null
+        }
+    },
+
+    impbow: {
+        background: null,
+        text: 'YOU DIED',
+        subText: 'The imp caught the arrows and easily shot them back at you',
+        options: {
+            null: null,
+            null: null,
+            null: null
+        }
+    },
+
+    impAxe: {
+        background: null,
+        text: 'YOU DIED',
+        subText: 'The axe was too large and the imp dodged it before knocking you out cold',
+        options: {
+            null: null,
+            null: null,
+            null: null
+        }
+    },
+
+    impDart: {
+        background: null,
+        text: 'CONGRATULATIONS!',
+        subText: `After killing the imp with the darts, you were able to gather the ingredients for your famous 'imp stew'. Your guest loved it and the party was a sucess.`,
+        options: {
+            null: null,
+            null: null,
+            null: null
         }
     }
 }

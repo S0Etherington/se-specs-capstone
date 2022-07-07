@@ -8,7 +8,7 @@ const Home = () => {
     <div className='storyBox'>
         <div id='homeTextBox'>
           <h1 className='homeText storyText'>It is a beautiful day, and you are preparing for a party.</h1>
-          <h3 className='homeText'>Your cupboards are empty, so you grab your bag and set of in search of ingredients.</h3>
+          <h3 className='homeText'>Your cupboards are empty, so you grab your bag and set of in search of ingredients for your famous soup.</h3>
         </div>
         <div id='homeButtonsBox'>
           <Link to='/StoryPage'>
