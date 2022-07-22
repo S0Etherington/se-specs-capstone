@@ -334,7 +334,7 @@ const story = {
         text: 'You ignore the interuption and continue rowing',
         subText: 'You pull your boat shore and look up at the mountain',
         options: {
-            mountainGear: 'Use climcing gear to reach the top',
+            mountainGear: 'Use climbing gear to reach the top',
             mountainDeath: 'Use your parkour skills to reach the top',
             null: null
         }
@@ -429,11 +429,25 @@ const story = {
     },
 
     backyardChicken: {
-
+        background: null,
+        text: 'You look into your chicken coop at your hens dutifully laying eggs',
+        subText: 'They bock at you',
+        options: {
+            chickenEat: 'Use the chickens to make soup',
+            chickenTalk: 'Talk to the chickens',
+            null: null
+        }
     },
 
     backyardDig: {
-
+        background: null,
+        text: 'YOU DIED',
+        subText: `So that's where you burried that live landmine`,
+        options: {
+            null: null,
+            null: null,
+            null: null
+        }
     },
 
     spriteFight: {
@@ -459,7 +473,14 @@ const story = {
     },
 
     mountainGear: {
-
+        background: null,
+        text: 'You pull the climbing gear from your pack and begin climbing the mountain',
+        subText: 'You find a sleeping dragon at the top',
+        options: {
+            dragonKill: 'Kill the dragon while it is sleeping',
+            dragonHonor: 'Wake the dragon for an honorable fight',
+            null: null
+        }
     },
 
     mountainDeath: {
@@ -537,7 +558,85 @@ const story = {
             null: null,
             null: null
         }
+    },
+
+    chickenEat: {
+        background: null,
+        text: 'CONGRATULATIONS!',
+        subText: `You make a very normal chicken soup that your guests loved, but you can't shake the feeling of guilt in each bite`,
+        options: {
+            null: null,
+            null: null,
+            null: null
+        }
+    },
+
+    chickenTalk: {
+        background: null,
+        text: 'YOU DIED',
+        subText: `You have not yet mastered the language of chickens, and apparently said something rather offensive that the hens did not take kindly to`,
+        options: {
+            null: null,
+            null: null,
+            null: null
+        }
+    },
+
+    dragonKill: {
+        background: null,
+        text: 'You decide to raise your weapon to the sleeping beast',
+        subText: 'Which weapon will you use?',
+        options: {
+            dragonDarts: 'Poisonous blow darts',
+            dragonMorningStar: 'Electric morning star',
+            dragonAxe: 'Glowing axe'
+        }
+    },
+
+    dragonHonor: {
+        background: null,
+        text: 'YOU DIED',
+        subText: 'You thought that the dragon would admire your honor, but it was mostly just perturned you interupted its nap',
+        options: {
+            null: null,
+            null: null,
+            null: null
+        }
+    },
+
+    dragonDarts: {
+        background: null,
+        text: 'YOU DIED',
+        subText: 'The darts did nothing to pierce the dragons hide. It rebounded and punctured you in the neck',
+        options: {
+            null: null,
+            null: null,
+            null: null
+        }
+    },
+
+    dragonMorningStar: {
+        background: null,
+        text: 'YOU DIED',
+        subText: `As everyone knows there is less gravity at higher altitudes. Because of this, the second you pulled out the morning star it began to rise, carrying you far into the sky and eventually out of Earth's atmosphere`,
+        options: {
+            null: null,
+            null: null,
+            null: null
+        }
+    },
+
+    dragonAxe:{
+        background: null,
+        text: 'CONGRATULATIONS!',
+        subText: 'You slayed the dragon and were able to collect its vast treaures. You used the treasure to buy the best soup you could find',
+        options: {
+            null: null,
+            null: null,
+            null: null
+        }
     }
+
 }
 
 export default story
